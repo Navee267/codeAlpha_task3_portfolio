@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/codeAlpha_task3_portfolio/static/css/main.9f9d3c1c.css",
+    "main.js": "/codeAlpha_task3_portfolio/static/js/main.0407dc5b.js",
+    "static/js/453.19ecd426.chunk.js": "/codeAlpha_task3_portfolio/static/js/453.19ecd426.chunk.js",
+    "static/media/imagegallery.png": "/codeAlpha_task3_portfolio/static/media/imagegallery.27c54936b36587f2cb04.png",
+    "static/media/WhatsApp Image 2024-11-08 at 19.42.01_d4c16ef2.jpg": "/codeAlpha_task3_portfolio/static/media/WhatsApp Image 2024-11-08 at 19.42.01_d4c16ef2.034d252f872eb968cef7.jpg",
+    "static/media/testing.png": "/codeAlpha_task3_portfolio/static/media/testing.cfb20713a7907a20d9cd.png",
+    "static/media/Screenshot 2024-11-09 172535.png": "/codeAlpha_task3_portfolio/static/media/Screenshot 2024-11-09 172535.878fe8e905d560f240b0.png",
+    "static/media/codsoft_java_certificate_page-0001.jpg": "/codeAlpha_task3_portfolio/static/media/codsoft_java_certificate_page-0001.66184a9b38fd782fe28b.jpg",
+    "static/media/Screenshot 2024-10-11 174916.png": "/codeAlpha_task3_portfolio/static/media/Screenshot 2024-10-11 174916.b6df9dfd7d9693d053cd.png",
+    "static/media/WhatsApp Image 2024-11-04 at 20.05.14_1d737436.jpg": "/codeAlpha_task3_portfolio/static/media/WhatsApp Image 2024-11-04 at 20.05.14_1d737436.768ec504a41177eae09f.jpg",
+    "static/media/WhatsApp Image 2024-11-04 at 20.06.56_f84cbf05.jpg": "/codeAlpha_task3_portfolio/static/media/WhatsApp Image 2024-11-04 at 20.06.56_f84cbf05.3f86ac1b398ee1100083.jpg",
+    "static/media/Screenshot 2024-11-09 172943.png": "/codeAlpha_task3_portfolio/static/media/Screenshot 2024-11-09 172943.9bce95747de417da5db9.png",
+    "static/media/Screenshot 2024-10-11 111655.png": "/codeAlpha_task3_portfolio/static/media/Screenshot 2024-10-11 111655.ddd91fa42d6d14c1a04c.png",
+    "static/media/BMI.png": "/codeAlpha_task3_portfolio/static/media/BMI.c7dc7ae3193d8bf70996.png",
+    "static/media/weather.png": "/codeAlpha_task3_portfolio/static/media/weather.17867497bfde2fea9af7.png",
+    "static/media/currencyconverter.png": "/codeAlpha_task3_portfolio/static/media/currencyconverter.bd34c93fda8c2b68c20c.png",
+    "static/media/calculator.png": "/codeAlpha_task3_portfolio/static/media/calculator.2f605d6018c57767959c.png",
+    "static/media/qrcode.png": "/codeAlpha_task3_portfolio/static/media/qrcode.d2231a60c7028d6f4aba.png",
+    "static/media/passwordgen.png": "/codeAlpha_task3_portfolio/static/media/passwordgen.95bf4a07433934c5c7e1.png",
+    "index.html": "/codeAlpha_task3_portfolio/index.html",
+    "main.9f9d3c1c.css.map": "/codeAlpha_task3_portfolio/static/css/main.9f9d3c1c.css.map",
+    "main.0407dc5b.js.map": "/codeAlpha_task3_portfolio/static/js/main.0407dc5b.js.map",
+    "453.19ecd426.chunk.js.map": "/codeAlpha_task3_portfolio/static/js/453.19ecd426.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f9d3c1c.css",
+    "static/js/main.0407dc5b.js"
+  ]
+}
