@@ -1,0 +1,908 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.firstPage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 4, 0.7), rgba(0, 0, 0, .8)), url("https://wallpapers.com/images/hd/dslr-camera-1680-x-1050-background-yooso03v4m0wrnze.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.firstPage nav {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navs {
+    display: flex;
+    list-style-type: none;
+    width: 50%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.firstPage nav h1 {
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.container nav h1 a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+
+.firstPage nav h1 a:hover {
+    color: rgb(190, 98, 98);
+}
+
+.navs li {
+    color: white;
+    transition: 0.4s;
+}
+
+.navs li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navs li a:hover {
+    color: rgb(208, 111, 111);
+    cursor: pointer;
+}
+
+.menu {
+    color: white;
+    display: block;
+    margin-right: 20px;
+    font-size: 30px;
+    display: none;
+}
+
+.close {
+    width: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: red;
+}
+
+.close:hover {
+    color: aliceblue;
+    background-color: rgb(220, 82, 82);
+}
+
+.mobileNav {
+    width: 250px;
+    position: fixed;
+    left: -300px;
+    z-index: 2;
+    top: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(35, 34, 36);
+    transition: 1s;
+}
+
+.mobileNav ul {
+    margin: 50px 70px;
+    list-style-type: none;
+}
+
+.mobileNav ul li {
+    color: white;
+    margin-top: 20px;
+    font-weight: 350;
+    transition: 0.5s;
+}
+
+.mobileNav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.mobileNav ul li a:hover {
+    color: rgb(208, 111, 111);
+    cursor: pointer;
+}
+
+.signup-btn {
+    padding: 9px 25px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: rgb(233, 90, 90);
+    color: white;
+}
+
+.signup-btn:hover {
+    color: rgb(207, 194, 194);
+    background-color: rgb(207, 93, 84);
+}
+
+.firstPage .content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .div1 {
+    width: 600px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.content .div1 h1 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.content .div1 p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.content .div2{
+    width: 400px;
+    overflow: hidden;
+    height: 300px;
+    box-shadow: 5px 5px 15px rgba(238, 237, 237, 0.3);
+    border-radius: 50%;
+}
+
+.content .div2:hover img{
+    transform: scale(1.2);
+}
+
+.content .div2 img {
+    width: 400px;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.scroll {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    animation: scrolling alternate 1s infinite;
+    cursor: pointer;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px)
+    }
+}
+
+.secondPage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: url("https://media.istockphoto.com/id/1170916882/photo/woman-taking-picture-outdoors.jpg?s=612x612&w=0&k=20&c=C09Dk9DoDjVLR60Ztt-Jd9tyOdMo9p8WOIWUaVnfSrk=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secondPage .div1 {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondPage .div1 h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.secondPage .div2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 4, 0.7), rgba(0, 0, 0, .8)), rgb(172, 152, 152);
+}
+
+.secondPage .div2 div {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondPage .div2 div h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 29px;
+    margin-left: 10px;
+}
+
+.secondPage .div2 p {
+    color: white;
+    font-weight: 300;
+    width: 30%;
+    margin-right: 30px;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+.secondPage .div2 div p {
+    color: white;
+    margin-top: 10px;
+    font-weight: 300;
+    margin-left: 10px;
+    width: 90%;
+}
+
+.gap {
+    background-color: rgb(193, 90, 90);
+    width: 100%;
+    height: 10px;
+}
+
+.thirdPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: url("https://wallpapers.com/images/hd/photographer-1920-x-1080-background-7p5q1qfbri0o0fe8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thirdPage .div1 {
+    width: 72%;
+    height: 100vh;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.thirdPage .div1 div {
+    width: 100%;
+    height: 90vh;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.thirdPage .div1 div img {
+    display: flex;
+    flex-basis: 30%;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    border-radius: 6px;
+    transition: 0.5s;
+    filter: grayscale(0);
+}
+
+.thirdPage .div1 div img:hover {
+    transform: rotateZ(5deg);
+    filter: grayscale(10);
+}
+
+.thirdPage .div2 {
+    width: 28%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 34, 36);
+    padding-left: 20px;
+}
+
+.thirdPage .div2 div {
+    display: flex;
+    flex-direction: column;
+}
+
+.thirdPage .div2 div h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.thirdPage .div2 div p {
+    color: white;
+    font-weight: 340;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.scroll-third {
+    display: block;
+    color: white;
+    animation: scrolling alternate 1s infinite;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 10px 14px;
+    background-color: rgb(235, 94, 94);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: aliceblue;
+    background-color: rgb(171, 96, 96);
+}
+
+.ver-gap {
+    width: 10px;
+    height: 100vh;
+    background-color: rgb(63, 116, 197);
+}
+
+.ver-gap2 {
+    width: 10px;
+    height: 100vh;
+    background-color: rgb(16, 132, 89);
+}
+
+.fourthPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    background: url("https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/07/photographer-in-yellow-jacket.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fourthPage .div1 {
+    width: 72%;
+    height: 100vh;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fourthPage .div1 div {
+    width: 100%;
+    height: 90vh;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fourthPage .div1 div img {
+    display: flex;
+    flex-basis: 30%;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    border-radius: 6px;
+    transition: 0.5s;
+    filter: grayscale(0);
+}
+
+.fourthPage .div1 div img:hover {
+    transform: rotateZ(5deg);
+    filter: grayscale(10);
+}
+
+.fourthPage .div2 {
+    width: 28%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 34, 36);
+    padding-left: 20px;
+}
+
+.fourthPage .div2 div {
+    display: flex;
+    flex-direction: column;
+}
+
+.fourthPage .div2 div h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.fourthPage .div2 div p {
+    color: white;
+    font-weight: 340;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.scroll-four {
+    display: block;
+    color: white;
+    animation: scrolling alternate 1s infinite;
+    cursor: pointer;
+}
+
+
+.fifthPage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(31, 34, 33);
+}
+
+.fifthPage .div1 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifthPage .div1 p {
+    width: 60%;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 350;
+    margin-bottom: 20px;
+}
+
+.fifthPage .div1 h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.fifthPage .div2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fifthPage .div2 ul {
+    list-style-type: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+.fifthPage .div2 ul li {
+    line-height: 50px;
+}
+
+.fifthPage .div2 h2 {
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.gap-fifthPage {
+    background-color: rgb(208, 81, 81);
+    border-radius: 20px;
+    width: 300px;
+    height: 6px;
+}
+
+.fifthPage .div2 .send-email {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifthPage .div2 .send-email h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.fifthPage .div2 .send-email div input {
+    padding: 10px;
+    width: 500px;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+}
+
+.fifthPage .div2 .send-email div button {
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(221, 118, 118);
+    color: white;
+}
+
+.fifthPage .div2 .send-email div button:hover {
+    background-color: rgb(218, 146, 146);
+    color: aliceblue;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+    text-align: end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(223, 110, 110);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    font-size: 30px;
+    color: white;
+    margin-right: 50px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: rgb(210, 190, 190);
+    transform: translateY(-20px);
+    background-color: rgb(208, 100, 100);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:600px) {
+
+    .menu {
+        color: white;
+        display: block;
+    }
+
+    nav .navs {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .content .div1 {
+        width: 430px;
+    }
+
+    .content .div1 h1 {
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .secondPage {
+        margin-bottom: 150px;
+    }
+
+    .secondPage .div2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 150px;
+    }
+
+    .secondPage .div2 h2 {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .secondPage .div2 p {
+        text-align: center;
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .secondPage .div2 div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thirdPage {
+        width: 100%;
+        height: 100vh;
+        margin-top: 250px;
+        display: flex;
+        flex-direction: column-reverse;
+        background: url("https://img.freepik.com/free-photo/portrait-senior-man-holding-camera-device-world-photography-day-celebration_23-2151657148.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .thirdPage .div1 {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .thirdPage .div1 div {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .thirdPage .div1 div img {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 30%;
+        flex-wrap: wrap;
+        height: 200px;
+        margin-top: 20px;
+        width: 200px;
+        border-radius: 6px;
+        transition: 0.5s;
+        filter: grayscale(0);
+    }
+
+    .thirdPage .div1 div img:hover {
+        transform: rotateZ(5deg);
+        filter: grayscale(10);
+    }
+
+    .thirdPage .div2 {
+        width: 96%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(35, 34, 36);
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: -30px;
+    }
+
+    .thirdPage .div2 div {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .thirdPage .div2 div h2 {
+        color: white;
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    .thirdPage .div2 div p {
+        color: white;
+        font-weight: 340;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+
+    /*Four*/
+    .fourthPage {
+        width: 100%;
+        height: 100vh;
+        margin-top: 250px;
+        display: flex;
+        flex-direction: column-reverse;
+        background: url("");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .fourthPage .div1 {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .fourthPage .div1 div {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .fourthPage .div1 div img {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 30%;
+        flex-wrap: wrap;
+        height: 200px;
+        margin-top: 20px;
+        width: 200px;
+        border-radius: 6px;
+        transition: 0.5s;
+        filter: grayscale(0);
+    }
+
+    .fourthPage .div1 div img:hover {
+        transform: rotateZ(5deg);
+        filter: grayscale(10);
+    }
+
+    .fourthPage .div2 {
+        width: 96%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(35, 34, 36);
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: -30px;
+    }
+
+    .fourthPage .div2 div {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    /*fifth Page*/
+    .fifthPage {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(31, 34, 33);
+    }
+
+    .fifthPage .div1 {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fifthPage .div1 p {
+        width: 80%;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-weight: 350;
+        margin-bottom: 20px;
+    }
+
+    .fifthPage .div1 h2 {
+        color: white;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .fifthPage .div2 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .fifthPage .div2 ul {
+        list-style-type: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .fifthPage .div2 ul li {
+        line-height: 50px;
+    }
+
+    .fifthPage .div2 h2 {
+        color: white;
+        font-size: 26px;
+        font-weight: 400;
+        margin-left: 30px;
+    }
+
+    .gap-fifthPage {
+        background-color: rgb(208, 81, 81);
+        border-radius: 20px;
+        width: 300px;
+        height: 6px;
+    }
+
+    .fifthPage .div2 .send-email {
+        display: flex;
+        height: 200px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fifthPage .div2 .send-email h3 {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .fifthPage .div2 .send-email div input {
+        padding: 10px;
+        width: 300px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    footer p {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: rgb(223, 110, 110);
+    }
+
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Lavishly+Yours&family=Lobster&family=Marck+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>                                                            <!--task 4 Music Player Using HTML And CSS And JS-->
+    <div class="container">
+        <h2>Start Music <i class="fa-solid fa-music"></i></h2>
+        <img id="track_image" alt="">
+        <marquee id="title">Title</marquee>
+        <p id="artist">Artist</p>
+        <input type="range" id="duration_slider" min="0" max="100" value="0" onclick="change_duration()">
+        <div class="buttons">
+            <button id="pre" onclick="previous_song()"><i class="fa-solid fa-backward"></i></button>
+            <button id="play" onclick="justplay()"><i class="fa-solid fa-play"></i></button>
+            <button id="next" onclick="next_song()"><i class="fa-solid fa-forward"></i></button>
+        </div>
+    </div>
+
+    <script>
+        let previous = document.querySelector("#pre");
+        let play = document.querySelector("#play");
+        let next = document.querySelector("#next");
+
+        let title = document.querySelector("#title");
+        let artist = document.querySelector("#artist");
+        let slider = document.querySelector("#duration_slider");
+        let track_image = document.querySelector("#track_image");
+
+        let timer;
+        let autoplay = 1;
+        let track = document.createElement("audio");
+        let index_no = 0;
+        let playing_song = false;
+
+        let All_Song = [
+            {
+                Name: "'Real OG From GOAT'",
+                path: "songs/The Real Og.mp3",
+                img: "images/img1.jpg",
+                artist: "Yuvan Shankar Raja"
+            },
+            {
+                Name: "'Hunter Vantar From Vettaiyan'",
+                path: "songs/Hunter Vantaar.mp3",
+                img: "images/img2.jpg",
+                artist: "Aniruth"
+            },
+            {
+                Name: "'Chuttamalle From Devara'",
+                path: "songs/Chuttamalle.mp3",
+                img: "images/img3.jpg",
+                artist: "Aniruth And Shilpa Rao"
+            },
+            {
+                Name: "'Whistle Podu From GOAT'",
+                path: "songs/Whistle Podu.mp3",
+                img: "images/img4.jpg",
+                artist: "Yuvan Shankar Raja"
+            },
+            {
+                Name: "'Manasilaayo From Vettaiyan'",
+                path: "songs/Manasilaayo.mp3",
+                img: "images/img5.jpg",
+                artist: "Aniruth"
+            },
+        ]
+
+        function load_track(index_no) {
+            clearInterval(timer);
+            reset_slider();
+
+            track.src = All_Song[index_no].path;
+            title.innerHTML = All_Song[index_no].Name;
+            artist.innerHTML = All_Song[index_no].artist;
+            track_image.src = All_Song[index_no].img;
+
+            timer = setInterval(range_slider, 1000);
+            total.innerHTML = All_Song.length;
+            present.innerHTML = index_no + 1;
+        }
+
+        load_track(index_no);
+
+        function justplay() {
+            if (playing_song == false)
+            {
+                playsong();
+            }
+            else
+            {
+                pausesong();
+            }
+        }
+
+        function reset_slider() {
+            slider.value = 0;
+        }
+
+        function playsong() {
+            track.play();
+            playing_song = true
+            play.innerHTML = '<i class="fa-solid fa-pause"></i>';
+        }
+
+        function pausesong() {
+            track.pause();
+            playing_song = false;
+            play.innerHTML = '<i class="fa-solid fa-play"></i>'
+        }
+
+        function next_song() {
+            if (index_no < All_Song.length - 1) {
+                index_no += 1;
+                load_track(index_no);
+                playsong();
+            }
+            else {
+                index_no = 0;
+                load_track(index_no);
+                playsong();
+            }
+        }
+
+        function previous_song() {
+            if (index_no > 0) {
+                index_no -= 1;
+                load_track(index_no);
+                playsong();
+            }
+            else {
+                index_no = All_Song.length;
+                load_track(index_no);
+                playsong();
+            }
+        }
+
+        function change_duration() {
+            slider_position = track.duration * (slider.value / 100);
+            track.currentTime = slider_position;
+        }
+
+    </script>
+</body>
+
+</html>
