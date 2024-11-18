@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import App from "./CodeAlpha/Task2_Calculator/App";
-import "./CodeAlpha/Task2_Calculator/index.css";
+import App from "./CodeAlpha/Task1_ImageGallery/App";
+import "./CodeAlpha/Task1_ImageGallery/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
